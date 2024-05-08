@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #0e0e0e;
+    padding: 0;
+    margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #616161;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #3d434d;
+    border-radius: 20px;
+    border: 1px solid #626a79;
+  }
+
+header{
+    background-color: #222831;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    .active{
+        color: #76ABAE;
+        font-weight: 600;
+        border-bottom:#76ABAE 2px solid;
+    }
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li a{
+    color: #EEEEEE;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+header nav ul li a:hover{
+    color: #FFFFFF;
+    border-bottom:#FFFFFF 2px solid;
+}
+
+.title-text{
+    color: #FFFFFF;
+    text-align: center;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    img {
+        width: 32px;
+        height: auto;
+        padding-right: 8px;
+    }
+}
+
+.produtos{
+    margin: 2%;
+}
+
+.produtos__lista{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.produtos__item{
+    list-style-type: none;
+    background-color: #31363F;
+    border: #727272 2px solid;
+    border-radius: 2rem;
+    padding: 2rem;
+    max-width: 20rem;
+    max-height: 38rem;
+    margin-bottom: 2rem;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 10px 0px rgb(255, 255, 255, 0.3);
+    }
+}
+
+.produtos__conteudo {
+    img{
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+.produtos__informacoes{
+    h3{
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 0;
+    }
+    button{
+        width: 100%;
+        background-color: #17ad85;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem;
+        font-weight: 600;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .preco__frete-gratis{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 1rem;
+            color: #FFFFFF;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            img {
+                width: 24px;
+                height: auto;
+                padding-right: 8px;
+            }
+        }
+        h4{
+            font-size: 1.5rem;
+            color: #15F5BA;
+            display: flex;
+            flex-direction: column;
+            s{
+                color: #d3d3d3;
+                font-size: 1.0rem;
+            }
+        }
+    }
+
+    .span__preco__frete-gratis{
+        font-size:0.8rem;
+        color: #FFFFFF;
+        font-weight: 400;
+    }
+}
+
+footer {
+    background-color: #222831;
+    color: #EEEEEE;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
